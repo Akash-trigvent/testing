@@ -1,0 +1,17 @@
+{
+    "manifest_version":3,
+    "name":"localhost extension",
+    "version":"1.0.2",
+    "action":{
+        "default_title":"first",
+        "default_icon":"php-logo.png",
+        "default_popup":"popup.html"
+    },
+    "content_scripts":[
+        {
+        "matches":["https://*.google.com/*"],
+        "js":["content_script.js"]
+        }
+    ],
+    "permissions":["tabs", "storage"]
+}

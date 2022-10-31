@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+
+#element{
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0.3; }  
+    20% { opacity:0.5; }
+	40% { opacity:0.7; }
+    60% { opacity:0.8; }
+    80% { opacity:0.9; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0.3; }  
+    20% { opacity:0.5; }
+	40% { opacity:0.7; }
+    60% { opacity:0.8; }
+    80% { opacity:0.9; }
+    100% { opacity:1; }
+}
+
+#element2{
+    -webkit-animation: 3s ease 0s normal forwards 1 fadeout;
+    animation: 3s ease 0s normal forwards 1 fadeout;
+}
+
+@keyframes fadeout{
+    0% { opacity:1; }  
+    20% { opacity:0.8; }
+	40% { opacity:0.6; }
+    60% { opacity:0.4; }
+    80% { opacity:0.2; }
+    100% { opacity:0.1; }
+}
+
+@-webkit-keyframes fadeout{
+    0% { opacity:1; }  
+    20% { opacity:0.8; }
+	40% { opacity:0.6; }
+    60% { opacity:0.4; }
+    80% { opacity:0.2; }
+    100% { opacity:0.1; }
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 >The transition-delay Property</h1>
+
+<p>Hover over the div element below, to see the transition effect (Note that the transition effect will wait 2 seconds before starting):</p>
+
+<div id="element"></div>
+<div id="element2"></div>
+
+</body>
+</html>
